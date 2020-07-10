@@ -7,10 +7,21 @@ void main() => runApp(MaterialApp(
       title: Text("Thoughts"),
       backgroundColor: Colors.blueAccent,
     ),
-    body: Center(
-      child: Image(
-        image: AssetImage('images/thoughts.png'),
+    body: Container(
+      decoration: BoxDecoration(
+          gradient: LinearGradient(
+              begin:Alignment.topRight,
+              end: Alignment.bottomLeft,
+              colors: [Colors.blue,Colors.deepPurpleAccent]
+          )
+      ),
+      child: Center(
+        child: Container(
+          child: Image(
+            image: AssetImage('images/thoughts.png'),
 
+          ),
+        ),
       ),
     )
   ),
